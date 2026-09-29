@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "product": "学生多路径培养编排",
+  "source_context": "http://edu.people.com.cn/n1/2026/0924/c1006-40804945.html",
+  "actors": [
+    "学生",
+    "教务人员",
+    "培养方案负责人"
+  ],
+  "states": [
+    "申请",
+    "校验",
+    "占位",
+    "批准",
+    "转轨"
+  ],
+  "invariants": [
+    "路径版本",
+    "名额占用",
+    "课程折算",
+    "超时释放"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "09301-011-A",
+      "actor": "学生",
+      "state": "申请"
+    },
+    {
+      "case_id": "09301-011-B",
+      "actor": "培养方案负责人",
+      "state": "校验"
+    }
+  ],
+  "tags": [
+    "learning-pathway",
+    "quota-reservation"
+  ]
+}
